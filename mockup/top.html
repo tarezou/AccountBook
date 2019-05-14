@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>出納帳</title>
+    </head>
+    <body>
+        <h1>ログイン後TopPage</h1>
+        
+        <h2>ログアウト</h2>
+        <a href="index.html">ログアウト</a>
+        
+        <h2>入出金</h2>
+        
+        <p>入金しました</p>
+        <p>出金しました</p>
+        
+        <h3>入金</h3>
+        <form action="top.html" method="post">
+        金額<input name="amount">
+        <button>入金する</button>
+        </form>
+        
+        <h3>出金</h3>
+        <form action="top.html" method="post">
+        <select>
+            <option>飲食代
+            <option>交通費
+        </select><br>
+        金額<input name="amount">
+        <button>出金する</button>
+        </form>
+        
+        <h2>出納帳</h2>
+        memo 日付は降順で表示
+        <table border="1">
+            <tr>
+                <th>日付</th>
+                <th>科目</th>
+                <th>入金</th>
+                <th>出金</th>
+            </tr>
+            <tr>
+                <td>2019-5-2</td>
+                <td></td>
+                <td>￥50,000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2019-5-1</td>
+                <td>映画代</td>
+                <td></td>
+                <td>￥1,200</td>
+            </tr>
+            <tr>
+                <td>2019-4-30</td>
+                <td>飲食</td>
+                <td></td>
+                <td>￥1,200</td>
+            </tr>
+        </table>
+        
+        <h2>ユーザ情報</h2>
+        <a href="">*ユーザ情報の編集</a>
+    </body>
+</html>
